@@ -1,4 +1,6 @@
 from greets import greetings
+from translate import Translator
 
+t = Translator(to_lang ='hmn')
 for g in greetings:
-    print(g.title() + "!")
+    print(t.translate(g).title() + "!")
